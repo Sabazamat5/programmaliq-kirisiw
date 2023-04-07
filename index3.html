@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-ma'sele</title>
+  </head>
+  <body>
+    <h1>
+      berilgeni <br />
+      f(x) = e * cos(x) + 3x^2 f(x) = 4x^2 + tg(x)
+    </h1>
+
+    <input type="number" class="san">
+    <p class="juw">juwabi</p>
+    <button onclick="kun()">dd</button>
+
+    <script>
+      function kun() {
+        const x = Number(document.querySelector(".san").value);
+        var y=Math.E*(-Math.sin(x))+6*x;
+        document.querySelector(".juw").innerText = y;
+      }
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: azure;
+            
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .continer{
+            background: #777;
+            width: 30%;
+            height: 50vh;
+            margin: 13%;
+            margin-left: 25%;
+            border-radius: 20px;
+            padding: 10px;
+            padding-top: 20px;
+        }
+        input{
+            margin-left: 10px;
+            width: 60%;
+            height: 5vh;
+            border-radius: 19cm;
+        }
+        h2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        span{
+            font-size: 3.5vh;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="continer">
+        <h2>2-Ma'sele</h2>
+        <h3  style="text-align: center; background-color: red; border-radius: 10px;">
+            Berilgeni: <br> 
+            f(x) = (4x^2) + tg(x) <br>
+            Bir ma'rte tuwindi 
+            aling'annan son'
+            <br>f'(x)= 8x + 1/(cos(x)^2)
+        </h3>
+        <span>X:</span><input type="number" class="san">
+        <p class="juw"></p>
+        <button onclick="fun()"> Juwabi</button>
+    </div>
+    <script>
+        function fun(){
+            const x= (document.querySelector(".san").value);
+            var y= 8 * x + 1/Math.pow(Math.cos(x),2);
+            document.querySelector(".juw").innerText=y;
+        }
+    </script>
+</body>
+</html>

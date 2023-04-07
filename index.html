@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+        background: azure;
+      }
+      .dec {
+        padding-top: 3%;
+        margin-left: 35%;
+        margin-top: 10%;
+        width: 30%;
+        height: 340px;
+        border-radius: 20px;
+        background-color: red;
+      }
+      p {
+        border: 1px solid #333;
+        width: 20%;
+      }
+      input {
+        width: 50%;
+        border-radius: 15px;
+        height: 10%;
+        margin: 2%;
+      }
+      .boyi{
+        margin-left: 30px;
+      }
+      .ay{
+        margin-left: 25px;
+        margin-bottom: 25px;
+      }
+      button{
+        border-radius: 25%;
+        cursor: pointer;
+      }
+      .juw{
+        background: #555;
+        margin-left: 10%;
+      }.juw2{
+        background: #555;
+        margin-left: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <button><a href="iiindex.html">Bas betke o'tiw</a></button>
+    <div class="dec">
+      <span style="font-family:  sans-serif">
+        O'lshem <br>
+
+      </span>
+      <a>Salmag'i:</a><input class="salmaq" type="number" placeholder="gr" /><br />
+      <a class="ari">Boyi:</a><input class="boyi" type="number" placeholder="sm" /><br />
+      <a>Waqiti:</a><input class="ay" type="number" placeholder="ay" /><br />
+      <button onclick="fun()">Juwabi</button>
+      <p class="juw">Salmag'i</p>
+      <p class="juw2">Boyi</p>
+    </div>
+    <!-- S=v*t; -->
+    <!-- <script>
+      function fun() {
+        const v = Number(document.querySelector(".tez").value);
+        const t = Number(document.querySelector(".waq").value);
+        var S = v*t;
+        
+        document.querySelector(".juw").innerText = S;
+      }
+    </script> -->
+    <script>
+      function fun() {
+        const a = Number(document.querySelector(".ay").value);
+        const m = Number(document.querySelector(".salmaq").value);
+        const h = Number(document.querySelector(".boyi").value);
+        if(m<=0 && h<=0){
+          alert("qa'te mag'liwmat kiritildi!!! m ha'm n g'a 0 den kishi ma'nis berilmesein jan'adan mag'liwmat kiritin'")
+        }
+        else{
+        var S = a * 600 + m;
+        var B = a * 2 + h;
+        document.querySelector(".juw").innerText = S + " gr";
+        document.querySelector(".juw2").innerText = B + " sm";
+      }}
+    </script>
+  </body>
+</html>
